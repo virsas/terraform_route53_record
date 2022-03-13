@@ -1,4 +1,4 @@
-# tfmod_route53
+# terraform_route53
 
 Terraform module to create Route53 record
 
@@ -25,7 +25,7 @@ variable "route53_record_mx_example_org" {
 
 ## Dependency
 
-Route53 <https://github.com/virsas/tfmod_route53>
+Route53 <https://github.com/virsas/terraform_route53>
 
 ## Terraform example
 
@@ -44,7 +44,7 @@ variable "route53_record_a_example_org" {
 # Route 53 records
 ######################
 module "route53_record_a_example_org" {
-  source  = "github.com/virsas/tfmod_route53_record"
+  source  = "github.com/virsas/terraform_route53_record"
   zone_id = module.example_org_route53.zone_id
   record  = var.route53_record_a_example_org
 }
