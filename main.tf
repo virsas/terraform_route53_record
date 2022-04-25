@@ -1,3 +1,7 @@
+provider "aws" {
+  region = var.region
+}
+
 resource "aws_route53_record" "record" {
   zone_id = var.zone_id
   name    = var.record.name
