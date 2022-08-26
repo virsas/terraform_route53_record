@@ -44,7 +44,7 @@ variable "route53_record_a_example_org" {
 # Route 53 records
 ######################
 module "route53_record_a_example_org" {
-  source  = "github.com/virsas/terraform_route53_record"
+  source  = "git::https://github.com/virsas/terraform_route53_record.git?ref=v1.0.0"
   zone_id = module.example_org_route53.zone_id
   record  = var.route53_record_a_example_org
 }
